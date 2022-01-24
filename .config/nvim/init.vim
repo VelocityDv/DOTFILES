@@ -6,3 +6,9 @@ set expandtab
 set softtabstop=4
 set hlsearch
 set mouse=a
+
+call plug#begin()
+
+Plug 'https://github.com/vim-airline/vim-airline'
+
+call plug#end()
