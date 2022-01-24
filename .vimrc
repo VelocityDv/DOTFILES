@@ -5,3 +5,4 @@ set autoindent
 set expandtab
 set softtabstop=4
 set hlsearch
+set mouse=a
