@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+overlay=~/Pictures/i3lock/archmeme1.png
+
+scrot -o ~/Pictures/i3lock/currentworkspace.png
+convert ~/Pictures/i3lock/currentworkspace.png -blur 0x5 ~/Pictures/i3lock/currentworkspaceblur.png
+composite -gravity center $overlay ~/Pictures/i3lock/currentworkspaceblur.png ~/Pictures/i3lock/lockbackground.png
+i3lock -i ~/Pictures/i3lock/lockbackground.png
